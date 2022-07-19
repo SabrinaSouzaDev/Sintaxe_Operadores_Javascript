@@ -1,8 +1,12 @@
 function numigual(num1, num2) {
-    if (num1 === num2) {
+    if (!num1 || !num2) {
+        return 'Defina dois números!';
+    } else if (num1 === num2) {
         return "Os números " + num1 + " e " + num2 + " são iguais.";
+    } else {
+        const s = `Os números ${num1} e ${num2} não são iguais.`;
+        return s;
     }
-    return "Os números " + num1 + "e" + num2 + " não são iguais.";
 }
 
 function somar(num1, num2) {
